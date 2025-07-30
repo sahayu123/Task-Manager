@@ -1,0 +1,60 @@
+﻿<Window x:Class="Task_Manager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task_Manager"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+
+
+
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition  />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
+
+        </Grid.ColumnDefinitions>
+
+        
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Task Manager App" FontSize="30" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+       
+        <TextBlock  Grid.Row="1" Grid.Column="0" Text="Add New Task" FontSize="20"/>
+        
+        
+        <TextBox Name="taskname" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Task Name:" FontSize="16"/>
+
+        <TextBox Name="priority" Grid.Row="3" Grid.Column="1"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Proority (1-5): " FontSize="16"/>
+
+        <TextBox Name="duedate" Grid.Row="4" Grid.Column="1"/>
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="Time Left (Hours): " FontSize="16"/>
+
+        <Button Grid.Row="5" Grid.Column="0" Content="Add Task" Click="Button_Click" />
+
+        <ListBox  Grid.Row="6" Grid.Column="2"  Name="tasknamesdisplay"/>
+        <ListBox  Grid.Row="6" Grid.Column="3"  Name="prioirties"/>
+        <ListBox  Grid.Row="6" Grid.Column="4"  Name="dates"/>
+        
+    </Grid>
+</Window>
