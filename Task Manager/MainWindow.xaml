@@ -18,6 +18,11 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+
 
 
 
@@ -52,9 +57,18 @@
 
         <Button Grid.Row="5" Grid.Column="0" Content="Add Task" Click="Button_Click" />
 
-        <ListBox  Grid.Row="6" Grid.Column="2"  Name="tasknamesdisplay"/>
-        <ListBox  Grid.Row="6" Grid.Column="3"  Name="prioirties"/>
-        <ListBox  Grid.Row="6" Grid.Column="4"  Name="dates"/>
-        
+        <TextBlock  Grid.Row="6" Grid.Column="1" Text="To-Do List: " FontSize="20"/>
+
+        <ListBox  Grid.Row="7" Grid.Column="0"  Name="tasknamesdisplay"/>
+        <ListBox  Grid.Row="7" Grid.Column="1"  Name="prioirties"/>
+        <ListBox  Grid.Row="7" Grid.Column="2"  Name="dates"/>
+
+        <TextBlock  Grid.Row="8" Grid.Column="0" Text="Remove Task" FontSize="20" VerticalAlignment="Bottom"  HorizontalAlignment="Center" Margin="0,30,0,0" />
+        <TextBox Name="removetask" Grid.Row="9" Grid.Column="1"/>
+        <TextBlock  Grid.Row="9" Grid.Column="0" Text="Task Name" FontSize="15"  VerticalAlignment="Center"  HorizontalAlignment="Center"/>
+
+        <Button Grid.Row="10" Grid.Column="0" Content="Remove Task" Click="Button_Click_1" />
+
+
     </Grid>
 </Window>
